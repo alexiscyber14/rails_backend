@@ -25,9 +25,14 @@
 
 <!-- PROJECT DESCRIPTION -->
 
+
+
+
+
 # 📖 Hello Rails Back-End API <a name="about-project"></a>
  
-> Welcome to the Hello Rails Back-End API! This API provides a random greeting generator. It allows you to retrieve a random greeting from a pre-defined list of greetings.
+> Welcome to the Hello Rails Back-End API! This API provides a random greeting generator. It allows you to retrieve a random greeting from a pre-defined list of greetings. It uses a react redux app for the front end to display the randome greetings.
+<a href="https://github.com/alexiscyber14/react-frontend">HERE IS THE LINK TO THE REACT FRONTEND</a>
 
 ## 🛠 Built With <a name="built-with"></a>
 

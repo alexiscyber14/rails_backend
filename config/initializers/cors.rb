@@ -1,6 +1,6 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
     allow do
-      origins 'http://localhost:3003' # Update with your React app's domain
+      origins 'http://localhost:3000' # Update with your React app's domain
       
       resource '*',
         headers: :any,

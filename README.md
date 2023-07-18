@@ -1,5 +1,5 @@
 <div align="center">
-  <h3><b>Rails backend</b></h3>
+  <h3><b>Hello Rails Back-End API</b></h3>
 </div>
 
 # 📗 Table of Contents
@@ -25,9 +25,14 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Greeting Rails <a name="about-project"></a>
+
+
+
+
+# 📖 Hello Rails Back-End API <a name="about-project"></a>
  
-> Fully functional greeting rails that allows a user to add categories and transactions to their list.
+> Welcome to the Hello Rails Back-End API! This API provides a random greeting generator. It allows you to retrieve a random greeting from a pre-defined list of greetings. It uses a react redux app for the front end to display the randome greetings.
+<a href="https://github.com/alexiscyber14/react-frontend">HERE IS THE LINK TO THE REACT FRONTEND</a>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -50,11 +55,17 @@
 
 ### Key Features <a name="key-features"></a>
 
-- Registered users will be able to create new category.
+- Random Greeting Generation: The API provides an endpoint that selects a random greeting from a pre-defined list of greetings.
 
-- Users will be able to create a transaction entity from the category chosen
+- Easy Setup: The API is built with Ruby on Rails, a popular web framework known for its simplicity and ease of use. Setting up the API on a local machine is straightforward with the provided installation instructions.
 
-- Users will be able to go back to home.
+- Database Integration: The API utilizes a PostgreSQL database to store the greetings. It includes a migration and seeding process to initialize the greetings table.
+
+- RESTful API Design: The API follows RESTful principles, providing a consistent and intuitive interface for interacting with the greetings resource.
+
+- JSON Responses: All API responses are formatted as JSON, making it easy to consume the data from various client applications.
+
+- Scalable and Extensible: The Rails framework offers scalability and extens
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -73,10 +84,10 @@ In order to run this project you need:
 
 ### Setup
 
-Clone this [repository](https://github.com/alexiscyber14/ror-react.git) to your desired folder:
+Clone this [repository](https://github.com/alexiscyber14/rails_backend.git) to your desired folder:
 
 ```sh
-  git clone https://github.com/alexiscyber14/ror-react.git
+  git clone https://github.com/alexiscyber14/rails_backend.git
   cd Greeting-Rails
 ```
 
@@ -118,6 +129,27 @@ Run tests with:
   rspec
 ```
 
+## API End-Points
+- Retrieve a Random Greeting
+- Endpoint: /random-greeting
+
+- Method: GET
+
+- Description: This endpoint returns a random greeting from the available list of greetings.
+
+- Example Request:
+```sh
+    GET /random-greeting
+```
+
+Example Response:
+```sh
+{
+  "greeting": "Hello"
+}
+
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
@@ -135,7 +167,16 @@ Run tests with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add Authentication page**
+- [ ] **User Authentication: Implement user authentication and authorization to secure the API endpoints, allowing only authorized users to access certain resources.**
+
+- [ ] **CRUD Operations: Expand the API to support CRUD (Create, Read, Update, Delete) operations for managing greetings. This would include additional endpoints for creating, updating, and deleting greetings.**
+
+- [ ] **Pagination and Sorting: Add pagination and sorting capabilities to the API endpoints, allowing clients to retrieve greetings in chunks and specify sorting criteria.**
+
+- [ ] **Filtering and Searching: Enable filtering and searching functionality to allow clients to retrieve greetings based on specific criteria, such as content matching or date ranges.**
+
+- [ ] **Rate Limiting: Implement rate limiting to prevent abuse or excessive usage of the API by limiting the number of requests from a specific client within a certain time frame**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
